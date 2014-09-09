@@ -4,6 +4,9 @@
  ( assert ( or ( not p) q))
  ( assert ( or ( not q) r))
  ( assert ( or ( not p) r))
+ ( assert p)
+ ( assert ( not q))
+ ( assert r)
  ( check-sat)
  ( get-model)
 
